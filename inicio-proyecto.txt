@@ -53,7 +53,7 @@ Renombra la rama principal
 git branch -M main
 
 Añadimos el repositorio remoto
-git remote add origin https://github.com/juliorhode/React.git
+git remote add origin https://github.com/juliorhode/react-gifApp.git
 
 Sube los cambios al repositorio (-u para establecerlo por defecto) (origin hace referencia al url) (main es la rama a donde lo va a subir) 
 git push -u origin main-1
