@@ -60,3 +60,43 @@ git push -u origin main-1
 
 
 ----------------------------------------------------
+Crear token de acceso personal en GitHub
+-----------------------------------------
+Desde su cuenta de GitHub, vaya a Settings → Developer Settings → Personal Access Token → Generate New Token (indique su contraseña) → Complete el formulario → haga clic en Generar token → Copie el token generado 
+
+Para sistema operativo Windows
+-------------------------------
+Vaya a Credential Manager  desde el Control Panel → Windows Credentials → busque git:https://github.com→ Editar → En Contraseña, reemplace con su GitHub Personal Access Token.
+
+Si no encuentra git:https://github.com→ Haga clic en Agregar una credencial genérica → La dirección de Internet será git:https://github.comy deberá ingresar su nombre de usuario y contraseña será su GitHub Personal Access Token → Haga clic en Aceptar y listo
+
+Para un sistema operativo basado en Linux
+------------------------------------------
+Para Linux, debe configurar el cliente GIT local con un nombre de usuario y una dirección de correo electrónico,
+
+git config --global user.name "your_github_username"
+
+git config --global user.email "your_github_email"
+
+git config -l
+
+Una vez que GIT está configurado, podemos comenzar a usarlo para acceder a GitHub. 
+
+Ahora almacene en caché el registro dado en su computadora para recordar el token:
+
+$ git config --global credential.helper cache
+
+Si es necesario, en cualquier momento puede eliminar el registro de caché:
+
+$ git config --global --unset credential.helper
+$ git config --system --unset credential.helper
+
+Ahora intente tirar -vpara verificar
+git pull -v
+
+Linux/Debian (Clonar de la siguiente manera):
+git clone https://<tokenhere>@github.com/<user>/<repo>.git
+
+
+Personal access tokens:
+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
