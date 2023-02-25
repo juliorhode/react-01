@@ -112,3 +112,4 @@ Despliegue en Github pages
 6) luego pages
 7) en branch seleccionamos main y al lado seleccionamos docs (el root no porque es una aplicacion de node)
 8) luego save
+9) si indica un error de carga de modulo JS o CSS, en el index.htm de la carpeta docs, a las referencias de los archivos, le anteponemos un punto a la ruta para indicarle que a partir de deonde se encuentr (raiz) busque esa carpeta.
