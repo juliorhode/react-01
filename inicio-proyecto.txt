@@ -100,7 +100,7 @@ git clone https://<tokenhere>@github.com/<user>/<repo>.git
 
 
 Personal access tokens:
-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
+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
 
 Despliegue en Github pages
 ----------------------------------------------------
