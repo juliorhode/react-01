@@ -59,6 +59,7 @@ Sube los cambios al repositorio (-u para establecerlo por defecto) (origin hace 
 git push -u origin main
 
 
+
 ----------------------------------------------------
 Crear token de acceso personal en GitHub
 -----------------------------------------
@@ -99,4 +100,15 @@ git clone https://<tokenhere>@github.com/<user>/<repo>.git
 
 
 Personal access tokens:
-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
+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
+
+Despliegue en Github pages
+----------------------------------------------------
+1) cambiamos el nombre de la carpeta dist de nuestro proyecto y la renombramos a docs
+2) git add docs
+3) git commit -m "docs creado"
+4) git push
+5) nos vamos a settings
+6) luego pages
+7) en branch seleccionamos main y al lado seleccionamos docs (el root no porque es una aplicacion de node)
+8) luego save
