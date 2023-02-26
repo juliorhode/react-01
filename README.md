@@ -1,7 +1,9 @@
 # **GifApp**
 
 ## Creacion de proyecto con Vite
-```npm create vite```
+```
+npm create vite
+```
 
     ✔ Project name: … gif-app
     ✔ Select a framework: › React
@@ -11,19 +13,25 @@
         npm run dev
 
 ## Datos para giphy para las imagenes
-```apiKey = "iU2wKq7B5JjXmo7iU3Fok6T2Ix6UgcGi";```
+```
+apiKey = "iU2wKq7B5JjXmo7iU3Fok6T2Ix6UgcGi";
 
-```http://api.giphy.com/v1/gifs/random?api_key=${apiKey}```
+http://api.giphy.com/v1/gifs/random?api_key=${apiKey}
+
+```
 
 ## FileSystem
 React no tiene un patron determinado en las estructura de las carpetas como lo es angular
 
 ## Como generar el build de produccion
-```npm run build```
+```
+npm run build
+```
 
 ## Despliegue en netlify
-```npm run build```
-
+```
+npm run build
+```
 esto va a crear la carpeta dist y es lo que se usa para desplegar
 
 Para hacer las pruebas de despligue, vamos a usar netlify.com (que no tenga backend pero si podemos hacer peticiones http). Al decir que no tiene backend es que no tenemos el servidor de node corriendo ahi
@@ -36,11 +44,15 @@ Para hacer las pruebas de despligue, vamos a usar netlify.com (que no tenga back
 ## Despliegue en Github
 1)inicializa nuestro repositorio
 
-```git init```
+```
+git init
+```
 
 2) Si no lo hemos configurado
 
-```git config --global user.email "juliorhode@gmail.com"```
+```
+git config --global user.email "juliorhode@gmail.com"
+```
 
 ```git config --global user.name "Julio Rhode"```
 
