@@ -171,5 +171,3 @@ module.exports = {
 ``` 
 import 'whatwg-fetch';
 ```
-
-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
