@@ -35,21 +35,37 @@ Para hacer las pruebas de despligue, vamos a usar netlify.com (que no tenga back
 
 ## Despliegue en Github
 1)inicializa nuestro repositorio
-    ```git init```
+
+```git init```
+
 2) Si no lo hemos configurado
+
 ```git config --global user.email "juliorhode@gmail.com"```
+
 ```git config --global user.name "Julio Rhode"```
+
 3) Vamos a preparar todos los archivos desde el ultimo commit
+
 ```git add .```
+
 4) Preparamos los archivos
+
 ``` git commit -m "Primera carga" ```
+
 5) si borre algo accidentalmente, reconstruye todo a como estaba desde el ultimo commit
+
 ``` git checkout -- . ```
+
 6) Renombra la rama principal
+
 ``` git branch -M main ```
+
 7) Añadimos el repositorio remoto
+
 ``` git remote add origin https://github.com/juliorhode/react-gifApp.git ```
+
 8) Sube los cambios al repositorio (-u para establecerlo por defecto) (origin hace referencia al url) (main es la rama a donde lo va a subir) 
+
 ``` git push -u origin main ```
 
 ## Crear token de acceso personal en GitHub
@@ -64,22 +80,29 @@ Si no encuentra git:https://github.com→ Haga clic en Agregar una credencial ge
 Para Linux, debe configurar el cliente GIT local con un nombre de usuario y una dirección de correo electrónico,
 
 ``` git config --global user.name "your_github_username" ```
+
 ``` git config --global user.email "your_github_email" ```
+
 ``` git config -l ```
 
 Una vez que GIT está configurado, podemos comenzar a usarlo para acceder a GitHub. 
 
 Ahora almacene en caché el registro dado en su computadora para recordar el token:
+
 ``` git config --global credential.helper cache ```
 
 Si es necesario, en cualquier momento puede eliminar el registro de caché:
+
 ``` git config --global --unset credential.helper ```
+
 ``` git config --system --unset credential.helper ```
 
 Ahora intente tirar -vpara verificar
+
 ``` git pull -v ```
 
 Linux/Debian (Clonar de la siguiente manera):
+
 ``` git clone https://<tokenhere>@github.com/<user>/<repo>.git ```
 
 ## Despliegue en Github pages
@@ -96,9 +119,11 @@ Linux/Debian (Clonar de la siguiente manera):
 ## Configuraciones para testing
 ### Instalaciones
 ``` npm install --dev jest babel-jest @babel/preset-env @babel/preset-react  ```
+
 ``` npm install --dev @testing-library/react @types/jest jest-environment-jsdom ```
 
 Opcional Si usamos Fetch API (forma nativa para hacer peticiones http) en el proyecto:
+
 ``` npm install --dev whatwg-fetch ```
 
 Actualizar los scripts del package.json:
@@ -133,3 +158,5 @@ module.exports = {
 ``` 
 import 'whatwg-fetch';
 ```
+
+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
