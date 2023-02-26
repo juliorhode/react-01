@@ -3,6 +3,7 @@
 ## Creacion de proyecto con Vite
 ```
 npm create vite
+
 ```
 
     ✔ Project name: … gif-app
