@@ -16,3 +16,18 @@ export const Items = ({titulo, url}) => {
 
   
 };
+
+/*TAREA
+1) Añadir PropTypes
+  a)titulo obligatorio
+  b) url obligatorio
+2) Evaluar el snapchot
+
+npm install prop-types
+
+*/
+import PropTypes from 'prop-types'
+Items.propTypes = {
+  titulo : PropTypes.string.isRequired,
+  url    : PropTypes.string.isRequired
+}
